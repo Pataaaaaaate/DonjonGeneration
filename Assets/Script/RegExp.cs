@@ -15,15 +15,22 @@ public class RegExp : MonoBehaviour
 
 
 
-       /* 
-       ^ debut du modele 
-       $ fin du modele 
+    /* 
+    ^ debut du modele 
+    $ fin du modele 
 
-    a|b       je veux un a ou un b 
+ a|b       je veux un a ou un b 
 
-    
-    */
-    
+ . n'importe quel caracter 
+    \. caracter d'echappement 
+    {n} n fois le caracter qui precede 
+    {n,}n caracter minimum
+    {n,m}
+
+
+
+ */
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
