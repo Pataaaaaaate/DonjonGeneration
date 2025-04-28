@@ -25,16 +25,24 @@ public class RegExp : MonoBehaviour
     \. caracter d'echappement 
     {n} n fois le caracter qui precede 
     {n,}n caracter minimum
-    {n,m}
+    {n,m} n cara minimu et m maximum 
 
-
+    abc+ a suivi d'un b et suivi de 1 ou + de c (--> abc{1,})
+    abc* a suivi d'un b et suivi de 0 ou + de c  (--> abc{0,}
+    abc? a suivi d'un b et suivi de 0 ou 1 c (--> abc{1,}) 
+    
+    //split: decoupe une chaine donnée avec un paterne 
 
  */
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        // 
         bool test1 = Regex.IsMatch(codePostal,modele);
+
+
 
         if (test1)
         {
@@ -47,9 +55,15 @@ public class RegExp : MonoBehaviour
         }
     }
 
+
+    Match test2 =  Regex.Match(codePostal, modele); 
+        
+        if(test2.) 
     // Update is called once per frame
     void Update()
     {
         
+
+
     }
 }
